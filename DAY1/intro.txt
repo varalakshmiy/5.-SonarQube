@@ -1,0 +1,204 @@
+SonarQube by KK FUNDA
+=====================
+
+
+Explain the flow diagram ----> Before maven and tomcat ----> SonarQube.
+
+
+Def:
+---
+
+-> SonarQube is an open-source platform used for continuous inspection of code quality. 
+
+-> It performs static code analysis to identify bugs, vulnerabilities, and code smells in your code.
+
+
+
+Key Features
+=============
+
+Code Quality and Security
+-------------------------
+
+Bugs and Vulnerabilities ---> Detect and fix issues that might lead to bugs or security vulnerabilities.
+
+Code Smells --> Identify maintainability issues in your code.
+
+Code Coverage --> Measure how much of your code is covered by tests.
+
+Duplication --> Detect duplicate code blocks.
+
+Technical Debt --> Estimate the effort required to fix all the issues in the code.
+
+
+Multi-Language Support
+----------------------
+
+Supports a wide range of programming languages including Java, JavaScript, C#, C++, Python, PHP, and many more.
+
+Quality Gates
+-------------
+Set thresholds for quality metrics to ensure code meets the standards before it is integrated into the main branch.
+
+
+
+
+
+
+
+
+
+
+
+
+
+similar tools
+--------------
+
+SonarQube
+Checkmarx
+Coverity
+Fortify Static Code Analyzer (SCA)
+Veracode
+PMD
+ESLint
+FindBugs/SpotBugs
+StyleCop
+Pylint
+ReSharper
+Flake8
+Codacy
+CodeClimate
+DeepSource
+Semmle LGTM
+Klocwork
+Infer
+Bandit
+Rubocop
+Brakeman
+
+
+what is the diff between code review and code coverage?
+=========================================================
+
+code coverage:
+--------------
+
+Number of lines tested through unit test cases called as code coverage.
+
+In any project 80% need to satisfy.
+
+Benefits: Helps identify untested areas of code
+
+Tools: Tools like JaCoCo (for Java)
+
+
+
+code review:
+------------
+
+Code review is the process of manually reviewing code by team members to find bugs, ensure to following  coding standards, and improve overall code quality.
+
+Benefits: It Leads to better software quality, fewer bugs, and promotes best practices within the development team.
+
+Tools: Code review tools include GitHub Pull Requests.
+
+
+
+
+
+
+
+
+
+
+
+
+SonarQube introduction
+=======================
+
+Type --> Continuous Code Quality
+Vendor --> Sonar
+Is it open source? --> for some programming languages.
+Vesrion ---> 9.x
+supporting OS --> cross platform
+Is it executable software ---> No, download as a zip and extract it.
+
+download link: https://www.sonarsource.com/products/sonarqube/downloads/
+
+
+
+
+
+
+
+
+
+more information about SonarQube
+---------------------------------
+
+--> SonarQube previously called as a Sonar , It is open source software quality management tool.
+--> It will continuosly analyze and measures quality of a source code.
+--> In case any issues found, It will generate in html format/ PDF format reports.
+--> It supports multiple languages like JAVA, c#, Java Script etc [Initially It was developed for JAVA]
+--> It is supporting OS like mac,Linux, windows , etc
+--> It will support multiple DBs like MYSQL, Oracle, PostgreSQL, etc
+--> It will supports multile browsers like chrome, safari, IE, Microsoft edge, etc
+--> It will identify the bwlow issues:
+   1. Duplicate code
+   2. Coding standards
+   3. unit test cases
+   4. complex code
+   5. comments
+   6. potential bugs [ Exception handlings]
+   .........
+
+NOTE: with the help of SonarQube report we can stop the deployment also.
+
+
+
+
+
+
+
+
+
+
+prerequsites for SonarQube Installation
+=======================================
+
+
+To install SonarQube, certain prerequisites must be met in terms of software and hardware requirements.
+
+Below are the detailed prerequisites for installing SonarQube:
+
+1. Hardware Requirements
+------------------------
+CPU: Modern multi-core processor.
+
+RAM: At least 2GB of RAM (4GB recommended for production).  go for t2.medium
+
+Disk Space: 1GB of free disk space for the SonarQube installation, plus additional space for the database.
+
+2. Software Requirements
+------------------------
+Operating System
+-----------------
+Linux (preferred)
+Windows
+macOS
+
+Java
+----
+Java JDK 11 or 17
+SonarQube requires the Java JDK (not just the JRE).
+Set the JAVA_HOME environment variable to point to your JDK installation.
+
+DB
+--
+Oracle
+MYSQL  --> Removed
+MS SQL SERVER
+POSTGRE SQL 
+
+DB is optional, Because of H2 is inbuild DB for SonarQube.
