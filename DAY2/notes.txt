@@ -150,7 +150,10 @@ step 4: sh sonar.sh restart
 
 ====================================================================================================
 
-
+sonarqube supports 90 languages,every programing havs some rules based on rules code will be executed.based on rule issues generated,dev must follow that rule
+diff b/w quality profile and quality gates
+-----------------------------------------
+quality profile is collection of rules(wt need to scan and not need to scan),quality gates is collection of conditions.by default every progrming language have 1 quality profie it is sonar way,we can create ou own rule also.based on developer ceptadu rule anam update ceyali.
 
 
 
